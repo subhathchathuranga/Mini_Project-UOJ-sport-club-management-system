@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mini_Project</RootNamespace>
+    <AssemblyName>Mini_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdBookGround.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdBookGround.Designer.cs">
+      <DependentUpon>AdBookGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdBorrowedItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdBorrowedItem.Designer.cs">
+      <DependentUpon>AdBorrowedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdCreateEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdCreateEvent.Designer.cs">
+      <DependentUpon>AdCreateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroundReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroundReservation.Designer.cs">
+      <DependentUpon>GroundReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notice.Designer.cs">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignInPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignInPage.Designer.cs">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StBorrowItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StBorrowItem.Designer.cs">
+      <DependentUpon>StBorrowItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StEvent.Designer.cs">
+      <DependentUpon>StEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StGroundBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StGroundBook.Designer.cs">
+      <DependentUpon>StGroundBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StReturnItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StReturnItem.Designer.cs">
+      <DependentUpon>StReturnItem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdBookGround.resx">
+      <DependentUpon>AdBookGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdBorrowedItem.resx">
+      <DependentUpon>AdBorrowedItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdCreateEvent.resx">
+      <DependentUpon>AdCreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroundReservation.resx">
+      <DependentUpon>GroundReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice.resx">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignInPage.resx">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StBorrowItem.resx">
+      <DependentUpon>StBorrowItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StEvent.resx">
+      <DependentUpon>StEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StGroundBook.resx">
+      <DependentUpon>StGroundBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StReturnItem.resx">
+      <DependentUpon>StReturnItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BatmintonWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtmnFlower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Football.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rugby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rugby1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Herdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mettress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-05 at 6.18.41 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-09 at 5 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-09 at 5.46.12 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-09 at 5 [Converted]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-03 at 11 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whatat 11 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC_9411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-03-09 at 5 [Converted]2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackNew1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\University-of-Vavuniya-Logo-1024x1024.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

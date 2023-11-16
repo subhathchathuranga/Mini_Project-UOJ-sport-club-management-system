@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mini_Project", "Mini_Project.csproj", "{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "..\DAO\DAO.csproj", "{D2E01B4A-48C5-4350-8193-7F3BDB2EA3EA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MiniSetup", "..\MiniSetup\MiniSetup.vdproj", "{1CEFF5D0-0B0E-418A-B8D1-CF9D17B3D8D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E34C96F-3ADC-42DF-AEB5-3EE40AF97888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E01B4A-48C5-4350-8193-7F3BDB2EA3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E01B4A-48C5-4350-8193-7F3BDB2EA3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E01B4A-48C5-4350-8193-7F3BDB2EA3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E01B4A-48C5-4350-8193-7F3BDB2EA3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEFF5D0-0B0E-418A-B8D1-CF9D17B3D8D0}.Debug|Any CPU.ActiveCfg = Debug
+		{1CEFF5D0-0B0E-418A-B8D1-CF9D17B3D8D0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF0B75EA-92C4-4587-952E-1909D6A590A6}
+	EndGlobalSection
+EndGlobal
